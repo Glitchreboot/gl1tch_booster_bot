@@ -94,5 +94,5 @@ async def profile(msg: types.Message):
     pts, url = cursor.fetchone()
     await msg.answer(f"🔹 Твой канал: {url}\n🔹 Баллы: {pts}")
 
-if name == '__main__':
+if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)
